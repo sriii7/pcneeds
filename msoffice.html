@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pc Needs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pcneeds.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1 class="mainhead">Pc Needs</h1>
+    <div class="fullbox">
+      <nav class="headlinks">
+        <a href="../pcneeds/pcspeed.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Pc Speedup
+        </a>
+        <a href="../pcneeds/msoffice.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Ms office
+        </a>
+        <a href="../pcneeds/pcallissues.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Pc All Issues
+        </a>
+      </nav>
+      <div class="content1">
+        <h3 class="paraheads">Step 1:</h3>
+        <h5 class="paraheads1">Open cmd program with administrator rights.</h5>
+
+        <h3 class="paraheads">Step 2:</h3>
+        <h5 class="paraheads1">Get into the Office directory in cmd.</h5>
+
+        <p>
+          cd /d %ProgramFiles(x86)%\Microsoft Office\Office16<br />
+          or<br />
+          cd /d %ProgramFiles%\Microsoft Office\Office16
+        </p>
+        <h3 class="paraheads">Step 3:</h3>
+        <h5 class="paraheads1">Install Office 2021 volume license.</h5>
+
+        <h5 class="paraheads1">
+          This step is required. You can not install the KMS client product key
+          of Office without a volume license.
+        </h5>
+
+        <p>
+          for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms')
+          do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+        </p>
+
+        <h3 class="paraheads">Step 4:</h3>
+        <h5 class="paraheads1">
+          Activate your Office using the KMS key.Copy all 5 lines and paste in
+          cmd.
+        </h5>
+
+        <p>
+          cscript ospp.vbs /setprt:1688<br />
+
+          cscript ospp.vbs /unpkey:6F7TH >nul<br />
+
+          cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH<br />
+
+          cscript ospp.vbs /sethst:s8.uk.to<br />
+
+          cscript ospp.vbs /act
+        </p>
+        <h3 class="paraheads">Step 5:</h3>
+        <h5 class="paraheads1">Finally press enter after finishing Step 4.</h5>
+      </div>
+    </div>
+  </body>
+</html>
