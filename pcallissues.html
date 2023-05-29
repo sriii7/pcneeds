@@ -45,13 +45,29 @@
          </button>
          </div>
         
-        <h5 class="inparaheads1">chkdsk</h5>
+        /*<h5 class="inparaheads1">chkdsk</h5>*/
         <p class="paras1">(Check the file system, status of the system's hard drives and corrects errors on the disk)</p>
         <h3 class="steps1">Step 2:</h3>
-        <h5 class="inparaheads1">SFC /scannow</h5>
+       /* <h5 class="inparaheads1">SFC /scannow</h5>*/
+         <input type="text" value="SFC /scannow" id="myInput">
+
+       <div class="tooltip">
+         <button onclick="myFunction()" onmouseout="outFunc()">
+         <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+         Copy text
+         </button>
+         </div>
         <p class="paras1">(Allows users to scan for and restore corruptions in Windows system files)</p>
         <h3 class="steps1">Step 3:</h3>
-        <h5 class="inparaheads1">DISM /Online /Cleanup-Image /RestoreHealth</h5>
+       /* <h5 class="inparaheads1">DISM /Online /Cleanup-Image /RestoreHealth</h5>*/
+         <input type="text" value="DISM /Online /Cleanup-Image /RestoreHealth" id="myInput">
+
+       <div class="tooltip">
+         <button onclick="myFunction()" onmouseout="outFunc()">
+         <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+         Copy text
+         </button>
+         </div>
         <p class="paras1">(Run an advanced scan and repair any problems automatically.Once you complete the steps, the Deployment Image Servicing and Management tool will connect to the Windows Update servers to download and replace any damaged files in the local image for Windows 10 as necessary. )</p>
 
 
