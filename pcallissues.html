@@ -5,6 +5,7 @@
     <title>Pc Needs</title>
     <link rel="stylesheet" type="text/css" href="pcneeds.css" />
     <style></style>
+    <script type="text/javascript" src="../pcneeds/script1.js"></script>
   </head>
   <body>
     <h1 class="mainhead">Pc Needs</h1>
@@ -35,6 +36,15 @@
       <div class="content1">
         <h3 class="steps1">Step 1:</h3>
         <h3 class="inparaheads">Run CMD as administrator and type:</h3> 
+        <input type="text" value="chkdsk" id="myInput">
+
+       <div class="tooltip">
+         <button onclick="myFunction()" onmouseout="outFunc()">
+         <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+         Copy text
+         </button>
+         </div>
+        
         <h5 class="inparaheads1">chkdsk</h5>
         <p class="paras1">(Check the file system, status of the system's hard drives and corrects errors on the disk)</p>
         <h3 class="steps1">Step 2:</h3>
