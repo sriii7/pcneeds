@@ -19,11 +19,11 @@ function myFunction1() {
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
   
-  var tooltip1 = document.getElementById("myTooltip1");
+  var tooltip = document.getElementById("myTooltip1");
   tooltip.innerHTML = "Copied: " + copyText.value;
 }
 function outFunc1() {
-  var tooltip1 = document.getElementById("myTooltip1");
+  var tooltip = document.getElementById("myTooltip1");
   tooltip.innerHTML = "Copy to clipboard";
 }
 
@@ -33,10 +33,10 @@ function myFunction2() {
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
   
-  var tooltip2 = document.getElementById("myTooltip2");
+  var tooltip = document.getElementById("myTooltip2");
   tooltip.innerHTML = "Copied: " + copyText.value;
 }
 function outFunc2() {
-  var tooltip2 = document.getElementById("myTooltip2");
+  var tooltip = document.getElementById("myTooltip2");
   tooltip.innerHTML = "Copy to clipboard";
 }
