@@ -40,10 +40,17 @@
         <h5 class="paraheads1">Get into the Office directory in cmd.</h5>
 
         <p>
-          cd /d %ProgramFiles(x86)%\Microsoft Office\Office16<br />
+           <input type="text" value="cd /d %ProgramFiles(x86)%\Microsoft Office\Office16" id="myInput1"><br />
           or<br />
-          cd /d %ProgramFiles%\Microsoft Office\Office16
+          <input type="text" value="cd /d %ProgramFiles%\Microsoft Office\Office16" id="myInput1">
         </p>
+          <div class="tooltip">
+         <button onclick="myFunction1()" onmouseout="outFunc1()">
+         <span class="tooltiptext" id="myTooltip1">Copy to clipboard</span>
+         Copy text
+         </button>
+         </div>
+        
         <h3 class="paraheads">Step 3:</h3>
         <h5 class="paraheads1">Install Office 2021 volume license.</h5>
 
@@ -78,5 +85,6 @@
         <h5 class="paraheads1">Finally press enter after finishing Step 4.</h5>
       </div>
     </div>
+    <script type="text/javascript" src="../pcneeds/script1.js"></script>
   </body>
 </html>
